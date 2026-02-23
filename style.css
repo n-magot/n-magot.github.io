@@ -1,9 +1,6 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-  font-size: 18px; /* base for rem units */
-}
+html { scroll-behavior: smooth; font-size: 18px; }
 
 body {
   font-family: 'Nunito', sans-serif;
@@ -11,143 +8,240 @@ body {
   line-height: 1.8;
   color: #c9c4bc;
   background: #1e1e22;
-  padding: 5rem 2rem;
-}
-
-main {
-  max-width: 640px;
-  margin: 0 auto;
-}
-
-h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #eae7e1;
-  margin-bottom: 0.3rem;
-  letter-spacing: -0.01em;
-}
-
-.sub {
-  color: #7a7670;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-bottom: 2.5rem;
-}
-
-nav {
-  margin-bottom: 3.5rem;
+  min-height: 100vh;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 2rem 0;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 60% 40%, rgba(90,138,106,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  flex: 1;
+  display: flex;
   align-items: center;
 }
 
-nav a {
-  color: #a09b94;
-  text-decoration: none;
-  font-size: 1.05rem;
+.hero-text {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #eae7e1;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 0.6rem;
+}
+
+.hero-title {
+  font-size: 1.1rem;
   font-weight: 400;
+  color: #9a9590;
+  margin-bottom: 0.25rem;
+}
+
+.hero-affil {
+  font-size: 0.9rem;
+  color: #5a8a6a;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.02em;
+}
+
+/* ── SOCIAL ICONS ── */
+.social-icons {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #6b6762;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 400;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid #2e2d2b;
+  border-radius: 6px;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.social-icons a svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.social-icons a:hover {
+  color: #eae7e1;
+  border-color: #5a8a6a;
+  background: rgba(90,138,106,0.06);
+}
+
+/* ── TAB NAV ── */
+.tab-nav {
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid #2a2a2e;
+  padding-top: 4rem;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #4a4845;
+  padding: 0.75rem 1.5rem 0.75rem 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.tab-btn:hover {
+  color: #9a9590;
+}
+
+.tab-btn.active {
+  color: #eae7e1;
+  border-bottom-color: #5a8a6a;
+}
+
+/* ── CONTENT ── */
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 3rem 2rem 3rem;
+  flex: 1;
+}
+
+.tab-panel {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── PUBLICATIONS ── */
+.pub-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.pub-item {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #25252a;
+}
+
+.pub-meta {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5a8a6a;
+  min-width: 42px;
+  padding-top: 0.2rem;
+  letter-spacing: 0.04em;
+}
+
+.pub-title {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #d8d4cd;
+  text-decoration: none;
+  margin-bottom: 0.3rem;
   transition: color 0.15s;
 }
 
-nav a:hover {
-  color: #eae7e1;
-}
-
-nav a::after {
-  content: '·';
-  margin: 0 0.6rem;
-  color: #3e3c3a;
-}
-
-nav a:last-child::after {
-  content: '';
-}
-
-section {
-  margin-bottom: 3rem;
-}
-
-h2 {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+.pub-title:hover {
   color: #5a8a6a;
-  margin-bottom: 0.75rem;
 }
 
-p {
-  color: #b0aca5;
-  font-size: 1.05rem;
-}
-
-ul {
-  list-style: none;
-  font-size: 1.05rem;
-}
-
-ul li {
-  margin-bottom: 0.4rem;
-  color: #b0aca5;
-}
-
-a {
-  color: #c9c4bc;
-  text-decoration: underline;
-  text-decoration-color: #3a3835;
-  text-underline-offset: 3px;
-  transition: color 0.15s, text-decoration-color 0.15s;
-}
-
-a:hover {
-  color: #eae7e1;
-  text-decoration-color: #5a8a6a;
-}
-
-footer {
-  margin-top: 4.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #2a2a2e;
+.pub-desc {
   font-size: 0.9rem;
-  color: #4a4845;
+  color: #6b6762;
+  line-height: 1.6;
 }
 
-/* ── Tablet (≤768px) ── */
+/* ── ABOUT ── */
+.about-text {
+  font-size: 1rem;
+  color: #b0aca5;
+  max-width: 56ch;
+  margin-bottom: 1.25rem;
+  line-height: 1.85;
+}
+
+/* ── FOOTER ── */
+.site-footer {
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1.5rem 2rem 2.5rem;
+  font-size: 0.8rem;
+  color: #35332f;
+}
+
+/* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   html { font-size: 17px; }
-
-  body { padding: 3.5rem 1.75rem; }
-
-  h1 { font-size: 1.75rem; }
-
-  .sub { font-size: 0.95rem; }
-
-  nav a { font-size: 1rem; }
-
-  p, ul { font-size: 1rem; }
+  h1 { font-size: 2.2rem; }
+  .hero { padding: 3rem 1.5rem 0; }
+  .content { padding: 2.5rem 1.5rem; }
+  .tab-nav { padding: 3rem 1.5rem 0; }
+  .site-footer { padding: 1.5rem 1.5rem 2rem; }
 }
 
-/* ── Mobile (≤480px) ── */
 @media (max-width: 480px) {
   html { font-size: 16px; }
-
-  body { padding: 2.5rem 1.25rem; }
-
-  h1 { font-size: 1.5rem; }
-
-  .sub { font-size: 0.9rem; margin-bottom: 1.75rem; }
-
-  nav { margin-bottom: 2.5rem; }
-
-  nav a { font-size: 0.95rem; }
-
-  nav a::after { margin: 0 0.45rem; }
-
-  h2 { font-size: 0.78rem; }
-
-  p, ul { font-size: 0.97rem; }
-
-  section { margin-bottom: 2.25rem; }
-
-  footer { margin-top: 3rem; font-size: 0.82rem; }
+  h1 { font-size: 1.8rem; }
+  .hero { padding: 2.5rem 1.25rem 0; }
+  .hero-title { font-size: 1rem; }
+  .social-icons { gap: 0.75rem; }
+  .social-icons a { font-size: 0.82rem; padding: 0.4rem 0.75rem; }
+  .tab-btn { font-size: 0.85rem; padding: 0.75rem 1.25rem 0.75rem 0; }
+  .pub-item { flex-direction: column; gap: 0.25rem; }
+  .content { padding: 2rem 1.25rem; }
+  .tab-nav { padding: 2.5rem 1.25rem 0; }
+  .site-footer { padding: 1.5rem 1.25rem 2rem; }
 }
