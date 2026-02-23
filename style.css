@@ -3,92 +3,111 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'EB Garamond', Georgia, serif;
-  font-size: 1.15rem;
-  line-height: 1.75;
-  color: #1a1a1a;
-  background: #fff;
-  padding: 4rem 2rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #c9c4bc;
+  background: #1e1e22;
+  padding: 4.5rem 2rem;
 }
 
 main {
-  max-width: 600px;
+  max-width: 580px;
   margin: 0 auto;
 }
 
 h1 {
-  font-size: 1.6rem;
-  font-weight: 500;
-  margin-bottom: 0.2rem;
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: #eae7e1;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.01em;
 }
 
 .sub {
-  color: #555;
-  font-size: 1rem;
-  margin-bottom: 1.8rem;
+  color: #7a7670;
+  font-size: 0.95rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
 }
 
 nav {
   margin-bottom: 3rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.2rem 0;
+  align-items: center;
+  gap: 0;
 }
 
 nav a {
-  color: #1a1a1a;
+  color: #a09b94;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.92rem;
+  font-weight: 400;
+  transition: color 0.15s;
+}
+
+nav a:hover {
+  color: #eae7e1;
 }
 
 nav a::after {
-  content: ' · ';
-  color: #bbb;
+  content: '·';
+  margin: 0 0.55rem;
+  color: #3e3c3a;
 }
 
 nav a:last-child::after {
   content: '';
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
 section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.75rem;
 }
 
 h2 {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5a8a6a;
+  margin-bottom: 0.6rem;
 }
 
 p {
-  color: #333;
-  font-size: 1rem;
+  color: #b0aca5;
+  font-size: 0.97rem;
+  max-width: 52ch;
 }
 
 ul {
   list-style: none;
-  font-size: 1rem;
-  color: #333;
+  font-size: 0.97rem;
 }
 
 ul li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
+  color: #b0aca5;
 }
 
 a {
-  color: #1a1a1a;
+  color: #c9c4bc;
+  text-decoration: underline;
+  text-decoration-color: #3a3835;
+  text-underline-offset: 3px;
+  transition: color 0.15s, text-decoration-color 0.15s;
 }
 
 a:hover {
-  text-decoration: none;
+  color: #eae7e1;
+  text-decoration-color: #5a8a6a;
 }
 
 footer {
-  margin-top: 3rem;
-  font-size: 0.9rem;
-  color: #999;
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #2a2a2e;
+  font-size: 0.82rem;
+  color: #4a4845;
 }
