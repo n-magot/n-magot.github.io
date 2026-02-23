@@ -115,6 +115,7 @@ h1 {
   line-height: 1.85;
   max-width: 65ch;
   margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 /* ── SOCIAL ICONS ── */
