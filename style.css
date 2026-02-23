@@ -1,49 +1,50 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  font-size: 18px; /* base for rem units */
+}
 
 body {
   font-family: 'Nunito', sans-serif;
-  font-size: 1rem;
   font-weight: 300;
   line-height: 1.8;
   color: #c9c4bc;
   background: #1e1e22;
-  padding: 4.5rem 2rem;
+  padding: 5rem 2rem;
 }
 
 main {
-  max-width: 580px;
+  max-width: 640px;
   margin: 0 auto;
 }
 
 h1 {
-  font-size: 1.55rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #eae7e1;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
   letter-spacing: -0.01em;
 }
 
 .sub {
   color: #7a7670;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 300;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 nav {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0;
 }
 
 nav a {
   color: #a09b94;
   text-decoration: none;
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   font-weight: 400;
   transition: color 0.15s;
 }
@@ -54,7 +55,7 @@ nav a:hover {
 
 nav a::after {
   content: '·';
-  margin: 0 0.55rem;
+  margin: 0 0.6rem;
   color: #3e3c3a;
 }
 
@@ -63,31 +64,30 @@ nav a:last-child::after {
 }
 
 section {
-  margin-bottom: 2.75rem;
+  margin-bottom: 3rem;
 }
 
 h2 {
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #5a8a6a;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.75rem;
 }
 
 p {
   color: #b0aca5;
-  font-size: 0.97rem;
-  max-width: 52ch;
+  font-size: 1.05rem;
 }
 
 ul {
   list-style: none;
-  font-size: 0.97rem;
+  font-size: 1.05rem;
 }
 
 ul li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
   color: #b0aca5;
 }
 
@@ -105,9 +105,49 @@ a:hover {
 }
 
 footer {
-  margin-top: 4rem;
+  margin-top: 4.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid #2a2a2e;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: #4a4845;
+}
+
+/* ── Tablet (≤768px) ── */
+@media (max-width: 768px) {
+  html { font-size: 17px; }
+
+  body { padding: 3.5rem 1.75rem; }
+
+  h1 { font-size: 1.75rem; }
+
+  .sub { font-size: 0.95rem; }
+
+  nav a { font-size: 1rem; }
+
+  p, ul { font-size: 1rem; }
+}
+
+/* ── Mobile (≤480px) ── */
+@media (max-width: 480px) {
+  html { font-size: 16px; }
+
+  body { padding: 2.5rem 1.25rem; }
+
+  h1 { font-size: 1.5rem; }
+
+  .sub { font-size: 0.9rem; margin-bottom: 1.75rem; }
+
+  nav { margin-bottom: 2.5rem; }
+
+  nav a { font-size: 0.95rem; }
+
+  nav a::after { margin: 0 0.45rem; }
+
+  h2 { font-size: 0.78rem; }
+
+  p, ul { font-size: 0.97rem; }
+
+  section { margin-bottom: 2.25rem; }
+
+  footer { margin-top: 3rem; font-size: 0.82rem; }
 }
