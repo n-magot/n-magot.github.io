@@ -84,7 +84,7 @@
 
   <footer class="site-footer">© 2026 Konstantina Lelova</footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     const buttons = document.querySelectorAll('.tab-btn');
     const panels = document.querySelectorAll('.tab-panel');
 
@@ -92,4 +92,11 @@
       btn.addEventListener('click', () => {
         buttons.forEach(b => b.classList.remove('active'));
         panels.forEach(p => p.classList.remove('active'));
-        btn.c
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
