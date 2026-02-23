@@ -7,14 +7,15 @@ body {
   font-weight: 400;
   line-height: 1.8;
   color: #2a2a2e;
-  background: #5a6070;
+  background: #c8ccd4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* ── HERO ── */
+/* ── HERO — very dark grey band ── */
 .hero {
+  background: #252830;
   display: flex;
   flex-direction: column;
   padding: 5rem 2rem 0;
@@ -31,7 +32,6 @@ body {
 
 .hero-text { width: 100%; }
 
-/* ── HERO TOP (info + photo side by side) ── */
 .hero-top {
   display: flex;
   align-items: flex-start;
@@ -44,7 +44,7 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: #2c4a5a;
+  color: #7ab0cc;
   letter-spacing: -0.02em;
   line-height: 1.1;
   margin-bottom: 0.55rem;
@@ -54,14 +54,14 @@ h1 {
 .hero-title {
   font-size: 1.05rem;
   font-weight: 600;
-  color: #3a6070;
+  color: #8fbfd4;
   margin-bottom: 0.05rem;
 }
 
 .hero-univ {
   font-size: 0.95rem;
   font-weight: 400;
-  color: #3a6070;
+  color: #8fbfd4;
   opacity: 0.8;
   margin-bottom: 1rem;
 }
@@ -69,14 +69,14 @@ h1 {
 .hero-meng {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #5a4a7a;
+  color: #a898cc;
   margin-bottom: 0.05rem;
 }
 
 .hero-meng-univ {
   font-size: 0.88rem;
   font-weight: 400;
-  color: #5a4a7a;
+  color: #a898cc;
   opacity: 0.85;
   margin-bottom: 0;
 }
@@ -88,24 +88,24 @@ h1 {
   height: 260px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #9aa2ae;
+  border: 3px solid #4a5260;
   display: block;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 .photo-placeholder {
   display: none;
   width: 260px;
   height: 260px;
   border-radius: 50%;
-  background: #c8cfd8;
-  border: 3px solid #9aa2ae;
+  background: #3a4050;
+  border: 3px solid #4a5260;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
   font-weight: 700;
-  color: #2c4a5a;
+  color: #7ab0cc;
   letter-spacing: 0.05em;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
 }
 
 /* ── SOCIAL ICONS ── */
@@ -120,14 +120,14 @@ h1 {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  color: #444;
+  color: #c8d4dc;
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 600;
   padding: 0.4rem 0.9rem;
-  border: 1px solid #9aa2ae;
+  border: 1px solid #4a5260;
   border-radius: 6px;
-  background: #cdd1d8;
+  background: rgba(255,255,255,0.07);
   transition: color 0.2s, border-color 0.2s, background 0.2s, box-shadow 0.2s;
 }
 
@@ -138,10 +138,10 @@ h1 {
 }
 
 .social-icons a:hover {
-  color: #2c4a5a;
-  border-color: #2c4a5a;
-  background: #bec4cc;
-  box-shadow: 0 2px 8px rgba(44,74,90,0.12);
+  color: #fff;
+  border-color: #7ab0cc;
+  background: rgba(255,255,255,0.13);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 /* ── TAB NAV ── */
@@ -150,7 +150,7 @@ h1 {
   margin: 0 auto;
   width: 100%;
   display: flex;
-  border-bottom: 2px solid #9aa2ae;
+  border-bottom: 2px solid #a0a8b4;
   padding: 0 2rem;
 }
 
@@ -162,18 +162,18 @@ h1 {
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.03em;
-  color: #7a8490;
+  color: #606878;
   padding: 0.75rem 1.75rem 0.75rem 0;
   border-bottom: 2px solid transparent;
   margin-bottom: -2px;
   transition: color 0.2s, border-color 0.2s;
 }
 
-.tab-btn:hover { color: #2c4a5a; }
+.tab-btn:hover { color: #1e3040; }
 
 .tab-btn.active {
-  color: #2c4a5a;
-  border-bottom-color: #2c4a5a;
+  color: #1e3040;
+  border-bottom-color: #1e3040;
 }
 
 /* ── CONTENT ── */
@@ -208,13 +208,13 @@ h1 {
   display: flex;
   gap: 2rem;
   padding: 1.5rem 0;
-  border-bottom: 1px solid #9aa2ae;
+  border-bottom: 1px solid #a0a8b4;
 }
 
 .pub-meta {
   font-size: 0.8rem;
   font-weight: 700;
-  color: #2c4a5a;
+  color: #1e3a50;
   min-width: 42px;
   padding-top: 0.2rem;
   letter-spacing: 0.04em;
@@ -224,24 +224,24 @@ h1 {
   display: block;
   font-size: 1rem;
   font-weight: 700;
-  color: #222;
+  color: #111820;
   text-decoration: none;
   margin-bottom: 0.3rem;
   transition: color 0.15s;
 }
 
-.pub-title:hover { color: #2c4a5a; }
+.pub-title:hover { color: #1e3a50; }
 
 .pub-desc {
   font-size: 0.88rem;
-  color: #555;
+  color: #3a4450;
   line-height: 1.6;
 }
 
 /* ── ABOUT ── */
 .about-text {
   font-size: 1rem;
-  color: #333;
+  color: #1e2830;
   max-width: 58ch;
   margin-bottom: 1.25rem;
   line-height: 1.9;
@@ -254,7 +254,7 @@ h1 {
   width: 100%;
   padding: 1.5rem 2rem 2.5rem;
   font-size: 0.8rem;
-  color: #777;
+  color: #5a6470;
 }
 
 /* ── RESPONSIVE ── */
@@ -265,13 +265,12 @@ h1 {
   .content { padding: 2.5rem 1.5rem; }
   .tab-nav { padding: 0 1.5rem; }
   .site-footer { padding: 1.5rem 1.5rem 2rem; }
-  .hero-photo img, .photo-placeholder { width: 200px; height: 240px; }
+  .hero-photo img, .photo-placeholder { width: 200px; height: 200px; }
 }
 
 @media (max-width: 600px) {
-  /* photo moves BELOW the text on small screens */
   .hero-top { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
-  .hero-photo img, .photo-placeholder { width: 180px; height: 210px; }
+  .hero-photo img, .photo-placeholder { width: 170px; height: 170px; }
 }
 
 @media (max-width: 480px) {
