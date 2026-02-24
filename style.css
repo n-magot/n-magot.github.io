@@ -94,8 +94,8 @@ h1 {
 }
 .photo-placeholder {
   display: none;
-  width: 260px;
-  height: 260px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   background: #c8cfd8;
   border: 3px solid #9aa2ae;
