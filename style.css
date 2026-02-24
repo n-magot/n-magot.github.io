@@ -84,8 +84,8 @@ h1 {
 /* ── PHOTO ── */
 .hero-photo { flex-shrink: 0; }
 .hero-photo img {
-  width: 260px;
-  height: 260px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #9aa2ae;
