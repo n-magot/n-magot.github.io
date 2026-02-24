@@ -21,12 +21,189 @@
 
     <h2 class="page-title-heading">About Me</h2>
 
-    <p class="about-text">I am a PhD candidate in Applied and Computational Mathematics at the University of Crete, with an Integrated M.Eng. in Electrical and Computer Engineering from the Aristotle University of Thessaloniki. My research lies at the intersection of machine learning and medical data, with a focus on Causal Modeling and Estimation of Causal Parameters.</p>
-    <p class="about-text">Before my doctoral studies, I gained extensive experience in biomedical engineering projects, developing a strong interest in the challenges of medical data analysis. I am particularly passionate about building rigorous algorithmic frameworks that can be applied to real clinical problems.</p>
-    <p class="about-text">Outside of research, I enjoy teaching mathematics, collaborating on open-source projects, and exploring new developments at the boundary of statistics and computation.</p>
+    <!-- BIO INTRO -->
+    <div class="bio-intro">
+      <p class="about-text">I am a PhD candidate in Applied and Computational Mathematics at the University of Crete, with an Integrated M.Eng. in Electrical and Computer Engineering from the Aristotle University of Thessaloniki. My research lies at the intersection of machine learning and medical data, with a focus on Causal Modeling and Estimation of Causal Parameters.</p>
+      <p class="about-text">Before my doctoral studies, I gained extensive experience in biomedical engineering projects, developing a strong interest in the challenges of medical data analysis. I am particularly passionate about building rigorous algorithmic frameworks that can be applied to real clinical problems.</p>
+      <p class="about-text">Outside of research, I enjoy teaching mathematics, collaborating on open-source projects, and exploring new developments at the boundary of statistics and computation.</p>
+    </div>
+
+    <!-- ACCORDION -->
+    <div class="accordion">
+
+      <!-- EDUCATION -->
+      <div class="acc-item">
+        <button class="acc-header" onclick="toggleAcc(this)">
+          <span>Education</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <div class="acc-body">
+          <div class="edu-item">
+            <span class="edu-year">2024 — present</span>
+            <div>
+              <p class="edu-degree">PhD in Applied &amp; Computational Mathematics</p>
+              <p class="edu-place">University of Crete, Heraklion, Greece</p>
+              <p class="edu-note">Advisor: Sofia Triantafillou, Assistant Professor, Department of Mathematics and Applied Mathematics</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-year">2021 — 2023</span>
+            <div>
+              <p class="edu-degree">M.Sc. in Applied and Computational Mathematics</p>
+              <p class="edu-place">University of Crete, Heraklion, Greece</p>
+              <p class="edu-note">GPA: 9.5/10 (Excellent) · Thesis: "Bayesian causal feature selection from observational and limited experimental data" · Grade: 10/10</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-year">2014 — 2020</span>
+            <div>
+              <p class="edu-degree">Diploma in Electrical and Computer Engineering</p>
+              <p class="edu-place">Aristotle University of Thessaloniki, Greece</p>
+              <p class="edu-note">Specialization: Telecommunications · Integrated Master · GPA: 7.49/10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESEARCH EXPERIENCE -->
+      <div class="acc-item">
+        <button class="acc-header" onclick="toggleAcc(this)">
+          <span>Research Experience</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <div class="acc-body">
+          <div class="edu-item">
+            <span class="edu-year">2022 — now</span>
+            <div>
+              <p class="edu-degree">Postgraduate &amp; Graduate Student Researcher — IACM, FORTH</p>
+              <p class="edu-place">Institute of Applied and Computational Mathematics, Foundation for Research and Technology Hellas</p>
+              <p class="edu-note" style="margin-top:0.5rem">· Project: "Causal Discovery and Inference for Surrogate-Assisted Optimization", under a Research and Development Agreement between Huawei Technologies (Ireland) and FORTH.</p>
+              <p class="edu-note">· Project: "Individualized Prediction of Treatment Effects Using Data from Both Embedded Clinical Trials and Electronic Health Records." Developing causal statistical methods for personalized predictions using observational clinical data and data from clinical studies.</p>
+              <p class="edu-note">· Project: "Modeling and causal discovery problems using multiple datasets from different populations."</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-year">2020 — 2021</span>
+            <div>
+              <p class="edu-degree">Software Developer — INAB, CERTH</p>
+              <p class="edu-place">Institute of Applied Biosciences, Centre for Research and Technology Hellas</p>
+              <p class="edu-note">Part of the PvClinical Platform Project (PharmacoVigilance in Clinical Environments). Stack: Python, Django, jQuery, HTML, MySQL.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEACHING EXPERIENCE -->
+      <div class="acc-item">
+        <button class="acc-header" onclick="toggleAcc(this)">
+          <span>Teaching Experience</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <div class="acc-body">
+          <div class="edu-item">
+            <span class="edu-year">2022 — 2023</span>
+            <div>
+              <p class="edu-degree">Teaching Assistant — Numerical Analysis</p>
+              <p class="edu-place">Department of Mathematics and Applied Mathematics, University of Crete</p>
+              <p class="edu-note">Lab sessions focused on Python-based numerical methods (undergraduate program).</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-year">2022 — 2023</span>
+            <div>
+              <p class="edu-degree">Teaching Assistant — Parametric Statistics</p>
+              <p class="edu-place">Department of Mathematics and Applied Mathematics, University of Crete</p>
+              <p class="edu-note">Assisted students with parametric statistical concepts, problem-solving, and course materials (undergraduate program).</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-year">2023 — 2024</span>
+            <div>
+              <p class="edu-degree">MOOC Developer — AI Literacy Online Course</p>
+              <p class="edu-place">University of Crete</p>
+              <p class="edu-note">Co-developed an online course making AI accessible to non-technical university audiences. Presented at NERA 2024, Malmö University, Sweden.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONFERENCE PRESENTATIONS -->
+      <div class="acc-item">
+        <button class="acc-header" onclick="toggleAcc(this)">
+          <span>Conference Presentations</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <div class="acc-body">
+          <div class="edu-item">
+            <span class="edu-year">Jul 2025</span>
+            <div>
+              <p class="edu-degree">2nd Conference in Biostatistics &amp; Health Analytics</p>
+              <p class="edu-place">Aegina, Greece</p>
+              <p class="edu-note">Poster: "Personalized Causal Effect Estimation: A Bayesian Approach using Observational and Experimental Data"</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-year">Apr 2025</span>
+            <div>
+              <p class="edu-degree">EuroCIM 2025</p>
+              <p class="edu-place">Ghent, Belgium</p>
+              <p class="edu-note">Poster: "Personalised Causal Effect Estimation with Observational and Experimental Data"</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-year">Mar 2024</span>
+            <div>
+              <p class="edu-degree">NERA 2024 Conference</p>
+              <p class="edu-place">Malmö University, Sweden</p>
+              <p class="edu-note">Presentation: "(Ad)ventures in AI Education"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AWARDS & HONORS -->
+      <div class="acc-item">
+        <button class="acc-header" onclick="toggleAcc(this)">
+          <span>Awards &amp; Honors</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <div class="acc-body">
+          <div class="edu-item">
+            <span class="edu-year">2025 — 2026</span>
+            <div>
+              <p class="edu-degree">A.G. Leventis Foundation Grant</p>
+              <p class="edu-note">Competitive scholarship awarded to support PhD studies.</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-year">2023</span>
+            <div>
+              <p class="edu-degree">Award in Memory of Professor Athanasios C. Pheidas</p>
+              <p class="edu-note">Awarded for achieving the highest grade in the M.Sc. in Applied and Computational Mathematics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end accordion -->
   </div>
 
   <footer class="site-footer">© 2026 Konstantina Lelova</footer>
+
+  <script>
+    function toggleAcc(btn) {
+      const body = btn.nextElementSibling;
+      const isOpen = body.classList.contains('open');
+      // close all
+      document.querySelectorAll('.acc-body').forEach(b => b.classList.remove('open'));
+      document.querySelectorAll('.acc-header').forEach(h => h.classList.remove('open'));
+      // open clicked if it was closed
+      if (!isOpen) {
+        body.classList.add('open');
+        btn.classList.add('open');
+      }
+    }
+  </script>
 
 </body>
 </html>
